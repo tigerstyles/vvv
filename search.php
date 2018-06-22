@@ -6,14 +6,14 @@ require_once "inc/search.inc.php";
 <?php include "header.php" ?>
 
 <?php if(isset($_SESSION['name']) && !empty($_SESSION['name'])) : ?>
-  <div id="welcome" style="margin-top:50px;text-align:center;">
+  <div id="welcome">
     <p>Welcome <?php echo $_SESSION['name']; ?>!</p>
   </div>
 <?php endif; ?>
 <span class="help-block"><?php echo $search_err; ?></span>
 
 <div id="search">
-  <form action="search.php" method="get" style="text-align:center">
+  <form action="search.php" method="get">
     <div class="form-group">
       <input type="text" name="search" class="form-control">
     </div>

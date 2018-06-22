@@ -4,7 +4,7 @@
 
 <?php include "header.php" ?>
   <?php if(isset($_SESSION['name']) && !empty($_SESSION['name'])) : ?>
-    <div id="welcome" style="margin-top:50px;text-align:center;">
+    <div id="welcome">
       <p>Welcome <?php echo $_SESSION['name']; ?>!</p>
     </div>
   <?php endif; ?>

@@ -10,8 +10,7 @@
   <div id="header" style="">
     <a href="/login.php">Login</a>
     <a href="/register.php">Register</a>
-<?php    if(isset($_SESSION['name']) || !empty($_SESSION['name'])) : ?>
-
+<?php if(isset($_SESSION['name']) || !empty($_SESSION['name'])) : ?>
     <a href="/logout.php">Logout</a>
-  <?php endif;?>
-  </div>
+<?php endif;?>
+ß  </div>
