@@ -1,0 +1,15 @@
+<?php
+/* Database credentials. Set up for Homestead Vagrant machine) */
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'homestead');
+define('DB_PASSWORD', 'secret');
+define('DB_NAME', 'test');
+
+try{
+    $pdo = new PDO("mysql:host=" . DB_SERVER . ";dbname=" . DB_NAME, DB_USERNAME, DB_PASSWORD);
+    // Set the PDO error mode to exception
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e){
+    die("ERROR: Could not connect. " . $e->getMessage());
+}
+?>
