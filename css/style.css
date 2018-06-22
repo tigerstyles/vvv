@@ -24,7 +24,7 @@ body {
 form {
   text-align:center;
 }
-#search {
+#search, #searchtable {
   width:500px;
   margin: 0 auto;
   margin-top:50px;

@@ -12,7 +12,7 @@ require_once "inc/search.inc.php";
 <?php endif; ?>
 <span class="help-block"><?php echo $search_err; ?></span>
 
-<div id="search" style="width:500px;margin: 0 auto;margin-top:50px;">
+<div id="search">
   <form action="search.php" method="get" style="text-align:center">
     <div class="form-group">
       <input type="text" name="search" class="form-control">
@@ -22,7 +22,7 @@ require_once "inc/search.inc.php";
     </div>
   </form>
 </div>
-<div id="search" style="width:500px;margin: 0 auto;margin-top:50px;">
+<div id="searchtable">
   <table id="table" class="table">
     <thead>
       <tr>
